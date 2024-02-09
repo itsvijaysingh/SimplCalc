@@ -10,6 +10,9 @@ document.querySelectorAll('button.option').forEach(button => {
         }else if(option === 'C'){
             //clear current inputs
             valueContainer.value = '';
+        }else if(option.value = 'X'){
+            //remove last value
+            valueContainer.value.slice(0, -1);
         }else{
             //add values
             valueContainer.value += `${option}`;
